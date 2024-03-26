@@ -48,7 +48,9 @@ export async function getTeamAvatarListings(
     any,
     AxiosResponse<GetTeamAvatarListingsResponse["data"]>
   >(
-    `/${season}/avatars?teamNumber=${team}&eventCode=${eventCode}&page=${page}`
+    `/${season}/avatars?teamNumber=${team ?? ""}&eventCode=${
+      eventCode ?? ""
+    }&page=${page ?? ""}`
   );
   res.data;
 

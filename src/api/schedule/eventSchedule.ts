@@ -56,7 +56,9 @@ export async function getEventSchedule(
     any,
     AxiosResponse<GetEventScheduleResponse["data"]>
   >(
-    `/${season}/schedule/${eventCode}?tournamentLevel=${tournamentLevel}&teamNumber=${team}&start=${startMatch}&end=${endMatch}`
+    `/${season}/schedule/${eventCode}?tournamentLevel=${
+      tournamentLevel ?? ""
+    }&teamNumber=${team ?? ""}&start=${startMatch ?? ""}&end=${endMatch ?? ""}`
   );
   res.data;
 

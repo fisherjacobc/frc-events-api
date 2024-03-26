@@ -56,7 +56,9 @@ export async function getScoreDetails(
     any,
     AxiosResponse<GetScoreDetailsResponse["data"]>
   >(
-    `/${season}/schedule/${eventCode}?tournamentLevel=${tournamentLevel}&matchNumber=${match}&start=${startMatch}&end=${endMatch}`
+    `/${season}/schedule/${eventCode}?tournamentLevel=${tournamentLevel}&matchNumber=${
+      match ?? ""
+    }&start=${startMatch ?? ""}&end=${endMatch ?? ""}`
   );
   res.data;
 

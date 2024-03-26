@@ -55,7 +55,9 @@ export async function getEventRankings(
   const res = await axios.get<
     any,
     AxiosResponse<GetEventRankingsResponse["data"]>
-  >(`/${season}/rankings/${eventCode}?teamNumber=${team}&top=${top}`);
+  >(
+    `/${season}/rankings/${eventCode}?teamNumber=${team ?? ""}&top=${top ?? ""}`
+  );
   res.data;
 
   return {

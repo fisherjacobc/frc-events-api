@@ -58,7 +58,9 @@ export async function getDistrictRankings(
     any,
     AxiosResponse<GetDistrictRankingsResponse["data"]>
   >(
-    `/${season}/rankings/district?districtCode=${districtCode}&teamNumber=${team}&top=${top}&page=${page}`
+    `/${season}/rankings/district?districtCode=${districtCode}&teamNumber=${
+      team ?? ""
+    }&top=${top ?? ""}&page=${page ?? ""}`
   );
   res.data;
 
