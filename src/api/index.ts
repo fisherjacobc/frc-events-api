@@ -1,8 +1,8 @@
-// export * from "./season";
-// export * from "./awards";
-// export * from "./matches";
-// export * from "./rankings";
-export * from "./schedule";
+export * as season from "./season";
+export * as awards from "./awards";
+export * as matches from "./matches";
+export * as rankings from "./rankings";
+export * as schedule from "./schedule";
 export * as alliance from "./alliance";
 
 export type Response<T> =
