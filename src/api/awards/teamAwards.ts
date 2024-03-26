@@ -8,7 +8,7 @@ import { GetAwardsResponse } from ".";
  *
  * @example Team awards
  * ```ts
- * import FRC from "frc-events-api";
+ * import FRC from "first-events-api";
  *
  * const frc = FRC({
  *  username: "YOUR-USERNAME",
@@ -21,7 +21,7 @@ import { GetAwardsResponse } from ".";
  *
  * @example Team awards for a specific event
  * ```ts
- * import FRC from "frc-events-api";
+ * import FRC from "first-events-api";
  *
  * const frc = FRC({
  *  username: "YOUR-USERNAME",

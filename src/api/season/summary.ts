@@ -24,7 +24,7 @@ interface GetSeasonSummaryResponse {
  *
  * @example
  * ```ts
- * import FRC from "frc-events-api";
+ * import FRC from "first-events-api";
  *
  * const frc = FRC({
  *  username: "YOUR-USERNAME",
