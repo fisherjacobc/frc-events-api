@@ -57,12 +57,12 @@ interface GetDistrictsListingsResponse {
  * @returns The list of districts data
  */
 export async function getEventListings(
-  eventCode: string,
-  team: number,
-  districtCode: string,
-  excludeDistrict: boolean,
-  week: number,
-  tournamentType: TournamentType,
+  eventCode?: string,
+  team?: number,
+  districtCode?: string,
+  excludeDistrict?: boolean,
+  week?: number,
+  tournamentType?: TournamentType,
   season: number = axios.defaults.season
 ): Promise<Response<GetDistrictsListingsResponse>> {
   const res = await axios.get<
