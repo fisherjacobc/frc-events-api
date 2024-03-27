@@ -39,7 +39,6 @@ export async function calculatePlayoffPoints(
   >(
     `/${season}/rankings/district/qualPerformanceCalculation?tournamentType=${tournamentType}&quarterFinalWins=${qfWins}&semiFinalWins=${sfWins}&finalWins=${fWins}`
   );
-  res.data;
 
   return {
     //@ts-ignore

@@ -37,7 +37,6 @@ export async function calculateQualPoints(
   >(
     `/${season}/rankings/district/qualPerformanceCalculation?tournamentType=${tournamentType}&qualificationRank=${desiredRank}&teamsAtEvent=${teamsAtEvent}`
   );
-  res.data;
 
   return {
     //@ts-ignore

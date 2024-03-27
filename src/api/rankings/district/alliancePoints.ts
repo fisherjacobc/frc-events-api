@@ -54,7 +54,6 @@ export async function calculateAlliancePoints(
   >(
     `/${season}/rankings/district/allianceSelectionCalculation?tournamentType=${tournamentType}&sizeType=${allianceSizeType}&allianceNumber=${allianceNumber}&allianceRole=${allianceRole}`
   );
-  res.data;
 
   return {
     //@ts-ignore

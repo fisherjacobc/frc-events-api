@@ -62,7 +62,6 @@ export async function getDistrictRankings(
       team ?? ""
     }&top=${top ?? ""}&page=${page ?? ""}`
   );
-  res.data;
 
   return {
     //@ts-ignore

@@ -38,7 +38,6 @@ export async function getDistrictsListings(
     any,
     AxiosResponse<GetDistrictsListingsResponse["data"]>
   >(`/${season}/districts`);
-  res.data;
 
   return {
     //@ts-ignore

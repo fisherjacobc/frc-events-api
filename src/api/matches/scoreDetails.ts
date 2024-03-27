@@ -60,7 +60,6 @@ export async function getScoreDetails(
       match ?? ""
     }&start=${startMatch ?? ""}&end=${endMatch ?? ""}`
   );
-  res.data;
 
   return {
     //@ts-ignore

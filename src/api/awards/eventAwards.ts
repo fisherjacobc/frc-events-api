@@ -30,7 +30,6 @@ export async function getEventAwards(
   const res = await axios.get<any, AxiosResponse<GetAwardsResponse["data"]>>(
     `/${season}/awards/event/${eventCode}`
   );
-  res.data;
 
   return {
     //@ts-ignore

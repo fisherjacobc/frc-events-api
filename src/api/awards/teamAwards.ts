@@ -47,7 +47,6 @@ export async function getTeamAwards(
       ? `/${season}/awards/eventteam/${eventCode}/${team}`
       : `/${season}/awards/team/${team}`
   );
-  res.data;
 
   return {
     //@ts-ignore

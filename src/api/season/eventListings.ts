@@ -71,7 +71,6 @@ export async function getEventListings(
   >(
     `/${season}/events?eventCode=${eventCode}&teamNumber=${team}&districtCode=${districtCode}&excludeDistrict=${excludeDistrict}&weekNumber=${week}&tournamentType=${tournamentType}`
   );
-  res.data;
 
   return {
     //@ts-ignore

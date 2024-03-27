@@ -45,7 +45,6 @@ export async function getSummary(
     any,
     AxiosResponse<GetSeasonSummaryResponse["data"]>
   >(`/${season} `);
-  res.data;
 
   return {
     //@ts-ignore

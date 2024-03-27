@@ -58,7 +58,6 @@ export async function getEventRankings(
   >(
     `/${season}/rankings/${eventCode}?teamNumber=${team ?? ""}&top=${top ?? ""}`
   );
-  res.data;
 
   return {
     //@ts-ignore

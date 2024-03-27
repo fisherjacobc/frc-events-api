@@ -52,7 +52,6 @@ export async function getTeamAvatarListings(
       eventCode ?? ""
     }&page=${page ?? ""}`
   );
-  res.data;
 
   return {
     //@ts-ignore

@@ -41,7 +41,6 @@ export async function getAwardsListings(
     any,
     AxiosResponse<GetAwardsListingsResponse["data"]>
   >(`/${season}/awards/list`);
-  res.data;
 
   return {
     //@ts-ignore

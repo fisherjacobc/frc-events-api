@@ -47,7 +47,6 @@ export async function getEventAlliances(
     any,
     AxiosResponse<GetEventAlliancesResponse["data"]>
   >(`/${season}/alliances/${eventCode}`);
-  res.data;
 
   return {
     //@ts-ignore

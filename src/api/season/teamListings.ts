@@ -68,7 +68,6 @@ export async function getTeamListings(
       page ?? ""
     }`
   );
-  res.data;
 
   return {
     //@ts-ignore

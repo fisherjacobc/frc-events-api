@@ -60,7 +60,6 @@ export async function getEventSchedule(
       tournamentLevel ?? ""
     }&teamNumber=${team ?? ""}&start=${startMatch ?? ""}&end=${endMatch ?? ""}`
   );
-  res.data;
 
   return {
     //@ts-ignore
