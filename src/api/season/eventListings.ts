@@ -69,7 +69,11 @@ export async function getEventListings(
     any,
     AxiosResponse<GetDistrictsListingsResponse["data"]>
   >(
-    `/${season}/events?eventCode=${eventCode}&teamNumber=${team}&districtCode=${districtCode}&excludeDistrict=${excludeDistrict}&weekNumber=${week}&tournamentType=${tournamentType}`
+    `/${season}/events?eventCode=${eventCode ?? ""}&teamNumber=${
+      team ?? ""
+    }&districtCode=${districtCode ?? ""}&excludeDistrict=${
+      excludeDistrict ?? ""
+    }&weekNumber=${week ?? ""}&tournamentType=${tournamentType ?? ""}`
   );
 
   return {
